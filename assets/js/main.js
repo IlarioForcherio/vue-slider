@@ -4,11 +4,19 @@ var app = new Vue({
       
       link:'https://picsum.photos/200/300',
       
-      obj: [{ id: 1, nome: 'pippo', colore: 'rosso' },],
+      obj: [
+       {img:'https://picsum.photos/200/300'} ,
+       {img: 'https://picsum.photos/200/300'},
+       {img: 'https://picsum.photos/200/300'},
+       ],
       
       indice: 0,
     },
     methods: {
+
+      scorriImmagine: function(){
+        return this.indice++
+      }
       
     }
   })
