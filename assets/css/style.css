@@ -11,6 +11,16 @@
   height: 100vh;
 }
 
+button{
+  background-color: white;
+  border:none;
+}
+
+.fa-chevron-left,
+.fa-chevron-right{
+  font-size: 60px;
+}
+
 
 
 

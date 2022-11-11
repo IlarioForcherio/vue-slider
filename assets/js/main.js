@@ -34,7 +34,18 @@ var app = new Vue({
       }
 
       
-    }
+    },
+
+    dotUno: function () {
+      return this.indice = 0;
+    },
+    dotDue: function () {
+      return this.indice = 1;
+    },
+    dotTre: function () {
+      return this.indice = 2;
+    },
+
 
   }
 })
