@@ -45,8 +45,6 @@ var app = new Vue({
     dotTre: function () {
       return this.indice = 2;
     },
-
-
   }
 })
 

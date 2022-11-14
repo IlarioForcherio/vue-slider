@@ -11,15 +11,22 @@
   height: 100vh;
 }
 
-button{
-  background-color: white;
-  border:none;
-}
 
 .fa-chevron-left,
 .fa-chevron-right{
   font-size: 60px;
 }
+
+.dot-cnt{
+  padding: 2px 15px;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+.fa-circle{
+  padding:0px 15px;
+}
+
 
 
 

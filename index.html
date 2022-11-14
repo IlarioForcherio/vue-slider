@@ -23,17 +23,20 @@
 
 <div>
  
-<div class="d-flex" >
-  <button @click="scorriImmagineSx"><i class="fa-solid fa-chevron-left"></i></button>
+<div class="d-flex align-items-center" >
+ <i class="fa-solid fa-chevron-left"@click="scorriImmagineSx"></i>
   <!-- <div v-bind:src="obj">{{obj[2].img}}</div>  -->
   <img v-bind:src="obj[indice].img" alt="">
-  <button @click="scorriImmagineDx"><i class="fa-solid fa-chevron-right"></i></button> 
+  <i class="fa-solid fa-chevron-right"@click="scorriImmagineDx"></i>
 </div>
 
-<div class="d-flex justify-content-center">
-  <button @click="dotUno">0</button>
-  <button @click="dotDue">0</button>
-  <button @click="dotTre">0</button>
+<div class="d-flex justify-content-center p-3">
+  <div class="dot-cnt">
+  <i class="fa-regular fa-circle"@click="dotUno"></i>
+  <i class="fa-regular fa-circle" @click="dotDue"></i>
+  <i class="fa-regular fa-circle"@click="dotTre"></i> 
+  </div>
+  
 </div> 
 
 </div>
