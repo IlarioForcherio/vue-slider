@@ -33,9 +33,8 @@
       <!-- pallini -->
       <div class="d-flex justify-content-center p-3">
         <div class="dot-cnt">
-          <i class="fa-regular fa-circle" @click="dotUno"></i>
-          <i class="fa-regular fa-circle" @click="dotDue"></i>
-          <i class="fa-regular fa-circle" @click="dotTre"></i>
+            <!-- con questo v-for si creano tanti pallini quanti sono gli index dell'array "obj" -->
+          <i class="fa-regular fa-circle" v-for="( element, index ) in obj " @click="dotSlider(index)"></i>
         </div>
 
       </div>

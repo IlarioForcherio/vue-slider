@@ -45,15 +45,15 @@ var app = new Vue({
      setInterval( () => { this.scorriImmagineDx() },2000 );
     },
 
-    dotUno: function () {
-      return this.indice = 0;
+   //funzione per collegare l'index del v-for del "dot" all'index delle immagini
+    dotSlider: function(index){
+     this.indice = index;
     },
-    dotDue: function () {
-      return this.indice = 1;
-    },
-    dotTre: function () {
-      return this.indice = 2;
-    },
+
+
+
+
+
   }
 })
 
