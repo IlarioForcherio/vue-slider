@@ -13,6 +13,11 @@ var app = new Vue({
 
     indice: 0,
   },
+  //in mounted richiamo la funzione attivaintervallo
+  //dentro attivaintervallo ho richiamato scorriImmagineDx
+  mounted(){
+    this.attivaIntervallo();
+  },
   methods: {
 
     scorriImmagineDx: function () {
@@ -34,6 +39,10 @@ var app = new Vue({
       }
 
       
+    },
+
+     attivaIntervallo: function(){
+     setInterval( () => { this.scorriImmagineDx() },2000 );
     },
 
     dotUno: function () {
