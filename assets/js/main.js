@@ -30,7 +30,7 @@ var app = new Vue({
         this.indice--;
       }
       if(this.indice <= -1){
-        this.indice = 2;
+        this.indice = this.obj.length - 1;
       }
 
       
